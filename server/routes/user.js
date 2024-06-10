@@ -41,7 +41,7 @@ const CheckLogged = async (req, res, next) => {
         }
       }
     } else {
-      next();
+      next(); // if jwt token not valid
     }
   });
 };
