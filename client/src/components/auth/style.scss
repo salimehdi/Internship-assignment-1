@@ -128,30 +128,39 @@
                             padding-right: 0px;
                         }
                     }
-
+                    // added this style to button tht says "Continue
                     button {
-                        text-align: center;
-                        height: 52px;
-                        width: calc(18rem + 33px);
-                        margin-top: 1.5rem;
+                        width: 100%;
+                        background-image: linear-gradient(92.88deg, #191949 9.16%, #2e205d 43.89%, #572264 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
                         color: #FFFFFF;
-                        background: #191949;
-                        transition: all .1s ease-in-out;
-                        -moz-transition: all .1s ease-in-out;
-                        border-radius: 3px;
-                        border: none;
-                        outline: none;
+                        cursor: pointer;
+                        flex-shrink: 0;
                         font-size: 16px;
-
-                        @media screen and (max-width:340px) {
-                            width: 100%;
+                        font-weight: 500;
+                        height: 4rem;
+                        margin: 1rem 0;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                      }
+                      
+                      button:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                      }
+                      
+                      @media (min-width: 768px) {
+                        button {
+                          padding: 0 2.6rem;
                         }
-
-                        &:hover {
-                            cursor: pointer;
-                            background: #191949;
-                        }
-                    }
+                      }
 
                 }
             }
@@ -605,7 +614,7 @@
                 width: 100%;
                 margin-top: 1.5rem;
                 color: #FFFFFF;
-                background: #191949;
+                background: #194938;
                 transition: all .1s ease-in-out;
                 -moz-transition: all .1s ease-in-out;
                 border-radius: 3px;

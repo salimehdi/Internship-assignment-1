@@ -175,7 +175,7 @@ const LoginEmail = ({
           />
         </div>
         <div>
-          <button type="submit">Continue</button>
+          <button  type="submit">Continue</button>
         </div>
       </form>
 

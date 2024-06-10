@@ -553,21 +553,41 @@
         margin-top: 0.5rem;
 
         button {
-          width: 5em;
-          height: 3em;
-          text-align: center;
-          background: #191949;
-          color: rgba(255, 255, 255, 1);
-          border-radius: 0.25rem;
-          border: none;
+          background-color: #191949;
+          border-radius: 4px;
+          border: 0;
+          box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+          box-sizing: border-box;
+          color: #fff;
           cursor: pointer;
-          transition: all 0.1s ease-in-out;
-          -moz-transition: all 0.1s ease-in-out;
-
-          &:hover {
-            background: #191949;
+          display: inherit;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+          margin: 0;
+          min-height: 56px;
+          min-width: 120px;
+          padding: 16px 20px;
+          position: relative;
+          text-align: center;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          transition: all .2s cubic-bezier(.22, .61, .36, 1);
+        }
+        
+        button:hover {
+          background-color: #3333a4;
+          transform: translateY(-2px);
+        }
+        
+        @media (min-width: 768px) {
+          button {
+            padding: 16px 44px;
+            min-width: 150px;
           }
         }
+
       }
     }
 
